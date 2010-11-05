@@ -5,19 +5,19 @@
                    displayName="Header Files"
                    projectFiles="true"
                    kind="SOURCE_LOGICAL_FOLDER">
-      <itemPath>trunk/BufferDescriptor.h</itemPath>
-      <itemPath>trunk/BufferObserver.h</itemPath>
-      <itemPath>trunk/Chunk.h</itemPath>
-      <itemPath>trunk/IOAppend.h</itemPath>
-      <itemPath>trunk/IOBuffer.h</itemPath>
-      <itemPath>trunk/IOComplete.h</itemPath>
-      <itemPath>trunk/IOFlush.h</itemPath>
-      <itemPath>trunk/IOManager.h</itemPath>
-      <itemPath>trunk/IOOperation.h</itemPath>
-      <itemPath>trunk/Mangler.h</itemPath>
-      <itemPath>trunk/Melter.h</itemPath>
-      <itemPath>trunk/Parser.h</itemPath>
-      <itemPath>trunk/prototypes.h</itemPath>
+      <itemPath>BufferDescriptor.h</itemPath>
+      <itemPath>BufferObserver.h</itemPath>
+      <itemPath>Chunk.h</itemPath>
+      <itemPath>IOAppend.h</itemPath>
+      <itemPath>IOBuffer.h</itemPath>
+      <itemPath>IOComplete.h</itemPath>
+      <itemPath>IOFlush.h</itemPath>
+      <itemPath>IOManager.h</itemPath>
+      <itemPath>IOOperation.h</itemPath>
+      <itemPath>Mangler.h</itemPath>
+      <itemPath>Melter.h</itemPath>
+      <itemPath>Parser.h</itemPath>
+      <itemPath>prototypes.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -28,17 +28,17 @@
                    displayName="Source Files"
                    projectFiles="true"
                    kind="SOURCE_LOGICAL_FOLDER">
-      <itemPath>trunk/BufferObserver.cc</itemPath>
-      <itemPath>trunk/Chunk.cc</itemPath>
-      <itemPath>trunk/IOAppend.cc</itemPath>
-      <itemPath>trunk/IOBuffer.cc</itemPath>
-      <itemPath>trunk/IOComplete.cc</itemPath>
-      <itemPath>trunk/IOFlush.cc</itemPath>
-      <itemPath>trunk/IOManager.cc</itemPath>
-      <itemPath>trunk/IOOperation.cc</itemPath>
-      <itemPath>trunk/Mangler.cc</itemPath>
-      <itemPath>trunk/Melter.cc</itemPath>
-      <itemPath>trunk/main.cc</itemPath>
+      <itemPath>BufferObserver.cc</itemPath>
+      <itemPath>Chunk.cc</itemPath>
+      <itemPath>IOAppend.cc</itemPath>
+      <itemPath>IOBuffer.cc</itemPath>
+      <itemPath>IOComplete.cc</itemPath>
+      <itemPath>IOFlush.cc</itemPath>
+      <itemPath>IOManager.cc</itemPath>
+      <itemPath>IOOperation.cc</itemPath>
+      <itemPath>Mangler.cc</itemPath>
+      <itemPath>Melter.cc</itemPath>
+      <itemPath>main.cc</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -48,22 +48,23 @@
                      displayName="libmelter_test"
                      projectFiles="true"
                      kind="TEST">
-        <itemPath>trunk/tests/BufferDescriptorTest.cc</itemPath>
-        <itemPath>trunk/tests/ChunkTest.cc</itemPath>
-        <itemPath>trunk/tests/IOBufferTest.cc</itemPath>
-        <itemPath>trunk/tests/IOManagerTest.cc</itemPath>
-        <itemPath>trunk/tests/ManglerTest.cc</itemPath>
-        <itemPath>trunk/tests/MelterTest.cc</itemPath>
-        <itemPath>trunk/tests/Mock.h</itemPath>
-        <itemPath>trunk/tests/ParserTest.cc</itemPath>
-        <itemPath>trunk/tests/main.cc</itemPath>
+        <itemPath>tests/BufferDescriptorTest.cc</itemPath>
+        <itemPath>tests/CMakeLists.txt</itemPath>
+        <itemPath>tests/ChunkTest.cc</itemPath>
+        <itemPath>tests/IOBufferTest.cc</itemPath>
+        <itemPath>tests/IOManagerTest.cc</itemPath>
+        <itemPath>tests/ManglerTest.cc</itemPath>
+        <itemPath>tests/MelterTest.cc</itemPath>
+        <itemPath>tests/Mock.h</itemPath>
+        <itemPath>tests/ParserTest.cc</itemPath>
+        <itemPath>tests/main.cc</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="false"
                    kind="IMPORTANT_FILES_FOLDER">
-      <itemPath>trunk/Makefile</itemPath>
+      <itemPath>CMakeLists.txt</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
