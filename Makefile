@@ -64,16 +64,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/local/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
-
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniele/devel/libmelter/CMakeFiles /home/daniele/devel/libmelter/CMakeFiles/progress.marks
@@ -119,17 +109,30 @@ melter/fast:
 .PHONY : melter/fast
 
 #=============================================================================
-# Target rules for targets named tests
+# Target rules for targets named run_tests
 
 # Build rule for target.
-tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tests
-.PHONY : tests
+run_tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests
+.PHONY : run_tests
 
 # fast build rule for target.
-tests/fast:
-	$(MAKE) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/build
-.PHONY : tests/fast
+run_tests/fast:
+	$(MAKE) -f tests/CMakeFiles/run_tests.dir/build.make tests/CMakeFiles/run_tests.dir/build
+.PHONY : run_tests/fast
+
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/build
+.PHONY : test/fast
 
 BufferObserver.o: BufferObserver.cc.o
 .PHONY : BufferObserver.o
@@ -404,8 +407,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... melter"
 	@echo "... rebuild_cache"
+	@echo "... run_tests"
 	@echo "... test"
-	@echo "... tests"
 	@echo "... BufferObserver.o"
 	@echo "... BufferObserver.i"
 	@echo "... BufferObserver.s"
