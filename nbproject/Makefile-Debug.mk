@@ -33,17 +33,17 @@ OBJECTDIR=build/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/IOBuffer.o \
-	${OBJECTDIR}/IOFlush.o \
-	${OBJECTDIR}/IOAppend.o \
-	${OBJECTDIR}/Melter.o \
-	${OBJECTDIR}/Chunk.o \
-	${OBJECTDIR}/IOManager.o \
-	${OBJECTDIR}/Mangler.o \
-	${OBJECTDIR}/IOComplete.o \
-	${OBJECTDIR}/IOOperation.o \
-	${OBJECTDIR}/BufferObserver.o
+	${OBJECTDIR}/trunk/IOOperation.o \
+	${OBJECTDIR}/trunk/Mangler.o \
+	${OBJECTDIR}/trunk/Chunk.o \
+	${OBJECTDIR}/trunk/IOComplete.o \
+	${OBJECTDIR}/trunk/IOManager.o \
+	${OBJECTDIR}/trunk/main.o \
+	${OBJECTDIR}/trunk/IOBuffer.o \
+	${OBJECTDIR}/trunk/BufferObserver.o \
+	${OBJECTDIR}/trunk/IOAppend.o \
+	${OBJECTDIR}/trunk/Melter.o \
+	${OBJECTDIR}/trunk/IOFlush.o
 
 # Test Directory
 TESTDIR=build/${CND_CONF}/${CND_PLATFORM}/tests
@@ -76,260 +76,260 @@ build/Debug/GNU-Linux-x86/tests/TestFiles/f2: ${OBJECTFILES}
 	${MKDIR} -p build/Debug/GNU-Linux-x86/tests/TestFiles
 	${LINK.cc} -shared -o ${TESTDIR}/TestFiles/f2 -fPIC ${OBJECTFILES} ${LDLIBSOPTIONS} 
 
-${OBJECTDIR}/main.o: main.cc 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/trunk/IOOperation.o: trunk/IOOperation.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
 	${RM} $@.d
-	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/main.o main.cc
+	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/IOOperation.o trunk/IOOperation.cc
 
-${OBJECTDIR}/IOBuffer.o: IOBuffer.cc 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/trunk/Mangler.o: trunk/Mangler.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
 	${RM} $@.d
-	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/IOBuffer.o IOBuffer.cc
+	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/Mangler.o trunk/Mangler.cc
 
-${OBJECTDIR}/IOFlush.o: IOFlush.cc 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/trunk/Chunk.o: trunk/Chunk.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
 	${RM} $@.d
-	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/IOFlush.o IOFlush.cc
+	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/Chunk.o trunk/Chunk.cc
 
-${OBJECTDIR}/IOAppend.o: IOAppend.cc 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/trunk/IOComplete.o: trunk/IOComplete.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
 	${RM} $@.d
-	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/IOAppend.o IOAppend.cc
+	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/IOComplete.o trunk/IOComplete.cc
 
-${OBJECTDIR}/Melter.o: Melter.cc 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/trunk/IOManager.o: trunk/IOManager.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
 	${RM} $@.d
-	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/Melter.o Melter.cc
+	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/IOManager.o trunk/IOManager.cc
 
-${OBJECTDIR}/Chunk.o: Chunk.cc 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/trunk/main.o: trunk/main.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
 	${RM} $@.d
-	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/Chunk.o Chunk.cc
+	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/main.o trunk/main.cc
 
-${OBJECTDIR}/IOManager.o: IOManager.cc 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/trunk/IOBuffer.o: trunk/IOBuffer.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
 	${RM} $@.d
-	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/IOManager.o IOManager.cc
+	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/IOBuffer.o trunk/IOBuffer.cc
 
-${OBJECTDIR}/Mangler.o: Mangler.cc 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/trunk/BufferObserver.o: trunk/BufferObserver.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
 	${RM} $@.d
-	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/Mangler.o Mangler.cc
+	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/BufferObserver.o trunk/BufferObserver.cc
 
-${OBJECTDIR}/IOComplete.o: IOComplete.cc 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/trunk/IOAppend.o: trunk/IOAppend.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
 	${RM} $@.d
-	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/IOComplete.o IOComplete.cc
+	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/IOAppend.o trunk/IOAppend.cc
 
-${OBJECTDIR}/IOOperation.o: IOOperation.cc 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/trunk/Melter.o: trunk/Melter.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
 	${RM} $@.d
-	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/IOOperation.o IOOperation.cc
+	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/Melter.o trunk/Melter.cc
 
-${OBJECTDIR}/BufferObserver.o: BufferObserver.cc 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/trunk/IOFlush.o: trunk/IOFlush.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
 	${RM} $@.d
-	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/BufferObserver.o BufferObserver.cc
+	$(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/IOFlush.o trunk/IOFlush.cc
 
 # Subprojects
 .build-subprojects:
 
 # Build Test Targets
 .build-tests-conf: .build-conf ${TESTFILES}
-${TESTDIR}/TestFiles/f1: ${TESTDIR}/tests/BufferDescriptorTest.o ${TESTDIR}/tests/ChunkTest.o ${TESTDIR}/tests/IOBufferTest.o ${TESTDIR}/tests/IOManagerTest.o ${TESTDIR}/tests/ManglerTest.o ${TESTDIR}/tests/MelterTest.o ${TESTDIR}/tests/ParserTest.o ${TESTDIR}/tests/main.o ${OBJECTFILES:%.o=%_nomain.o}
+${TESTDIR}/TestFiles/f1: ${TESTDIR}/trunk/tests/BufferDescriptorTest.o ${TESTDIR}/trunk/tests/ChunkTest.o ${TESTDIR}/trunk/tests/IOBufferTest.o ${TESTDIR}/trunk/tests/IOManagerTest.o ${TESTDIR}/trunk/tests/ManglerTest.o ${TESTDIR}/trunk/tests/MelterTest.o ${TESTDIR}/trunk/tests/ParserTest.o ${TESTDIR}/trunk/tests/main.o ${OBJECTFILES:%.o=%_nomain.o}
 	${MKDIR} -p ${TESTDIR}/TestFiles
 	${LINK.cc} -o ${TESTDIR}/TestFiles/f1 $^ ${LDLIBSOPTIONS} -L/usr/local/lib -lgtest -lpthread -lgmock -L/usr/local/lib -lcppunit -lcrypto 
 
 
-${TESTDIR}/tests/BufferDescriptorTest.o: tests/BufferDescriptorTest.cc 
-	${MKDIR} -p ${TESTDIR}/tests
+${TESTDIR}/trunk/tests/BufferDescriptorTest.o: trunk/tests/BufferDescriptorTest.cc 
+	${MKDIR} -p ${TESTDIR}/trunk/tests
 	${RM} $@.d
-	$(COMPILE.cc) -g -I. -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/BufferDescriptorTest.o tests/BufferDescriptorTest.cc
+	$(COMPILE.cc) -g -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/trunk/tests/BufferDescriptorTest.o trunk/tests/BufferDescriptorTest.cc
 
 
-${TESTDIR}/tests/ChunkTest.o: tests/ChunkTest.cc 
-	${MKDIR} -p ${TESTDIR}/tests
+${TESTDIR}/trunk/tests/ChunkTest.o: trunk/tests/ChunkTest.cc 
+	${MKDIR} -p ${TESTDIR}/trunk/tests
 	${RM} $@.d
-	$(COMPILE.cc) -g -I. -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/ChunkTest.o tests/ChunkTest.cc
+	$(COMPILE.cc) -g -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/trunk/tests/ChunkTest.o trunk/tests/ChunkTest.cc
 
 
-${TESTDIR}/tests/IOBufferTest.o: tests/IOBufferTest.cc 
-	${MKDIR} -p ${TESTDIR}/tests
+${TESTDIR}/trunk/tests/IOBufferTest.o: trunk/tests/IOBufferTest.cc 
+	${MKDIR} -p ${TESTDIR}/trunk/tests
 	${RM} $@.d
-	$(COMPILE.cc) -g -I. -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/IOBufferTest.o tests/IOBufferTest.cc
+	$(COMPILE.cc) -g -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/trunk/tests/IOBufferTest.o trunk/tests/IOBufferTest.cc
 
 
-${TESTDIR}/tests/IOManagerTest.o: tests/IOManagerTest.cc 
-	${MKDIR} -p ${TESTDIR}/tests
+${TESTDIR}/trunk/tests/IOManagerTest.o: trunk/tests/IOManagerTest.cc 
+	${MKDIR} -p ${TESTDIR}/trunk/tests
 	${RM} $@.d
-	$(COMPILE.cc) -g -I. -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/IOManagerTest.o tests/IOManagerTest.cc
+	$(COMPILE.cc) -g -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/trunk/tests/IOManagerTest.o trunk/tests/IOManagerTest.cc
 
 
-${TESTDIR}/tests/ManglerTest.o: tests/ManglerTest.cc 
-	${MKDIR} -p ${TESTDIR}/tests
+${TESTDIR}/trunk/tests/ManglerTest.o: trunk/tests/ManglerTest.cc 
+	${MKDIR} -p ${TESTDIR}/trunk/tests
 	${RM} $@.d
-	$(COMPILE.cc) -g -I. -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/ManglerTest.o tests/ManglerTest.cc
+	$(COMPILE.cc) -g -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/trunk/tests/ManglerTest.o trunk/tests/ManglerTest.cc
 
 
-${TESTDIR}/tests/MelterTest.o: tests/MelterTest.cc 
-	${MKDIR} -p ${TESTDIR}/tests
+${TESTDIR}/trunk/tests/MelterTest.o: trunk/tests/MelterTest.cc 
+	${MKDIR} -p ${TESTDIR}/trunk/tests
 	${RM} $@.d
-	$(COMPILE.cc) -g -I. -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/MelterTest.o tests/MelterTest.cc
+	$(COMPILE.cc) -g -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/trunk/tests/MelterTest.o trunk/tests/MelterTest.cc
 
 
-${TESTDIR}/tests/ParserTest.o: tests/ParserTest.cc 
-	${MKDIR} -p ${TESTDIR}/tests
+${TESTDIR}/trunk/tests/ParserTest.o: trunk/tests/ParserTest.cc 
+	${MKDIR} -p ${TESTDIR}/trunk/tests
 	${RM} $@.d
-	$(COMPILE.cc) -g -I. -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/ParserTest.o tests/ParserTest.cc
+	$(COMPILE.cc) -g -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/trunk/tests/ParserTest.o trunk/tests/ParserTest.cc
 
 
-${TESTDIR}/tests/main.o: tests/main.cc 
-	${MKDIR} -p ${TESTDIR}/tests
+${TESTDIR}/trunk/tests/main.o: trunk/tests/main.cc 
+	${MKDIR} -p ${TESTDIR}/trunk/tests
 	${RM} $@.d
-	$(COMPILE.cc) -g -I. -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/main.o tests/main.cc
+	$(COMPILE.cc) -g -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/trunk/tests/main.o trunk/tests/main.cc
 
 
-${OBJECTDIR}/main_nomain.o: ${OBJECTDIR}/main.o main.cc 
-	${MKDIR} -p ${OBJECTDIR}
-	@NMOUTPUT=`${NM} ${OBJECTDIR}/main.o`; \
+${OBJECTDIR}/trunk/IOOperation_nomain.o: ${OBJECTDIR}/trunk/IOOperation.o trunk/IOOperation.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/trunk/IOOperation.o`; \
 	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/main_nomain.o main.cc;\
+	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/IOOperation_nomain.o trunk/IOOperation.cc;\
 	else  \
-	    ${CP} ${OBJECTDIR}/main.o ${OBJECTDIR}/main_nomain.o;\
+	    ${CP} ${OBJECTDIR}/trunk/IOOperation.o ${OBJECTDIR}/trunk/IOOperation_nomain.o;\
 	fi
 
-${OBJECTDIR}/IOBuffer_nomain.o: ${OBJECTDIR}/IOBuffer.o IOBuffer.cc 
-	${MKDIR} -p ${OBJECTDIR}
-	@NMOUTPUT=`${NM} ${OBJECTDIR}/IOBuffer.o`; \
+${OBJECTDIR}/trunk/Mangler_nomain.o: ${OBJECTDIR}/trunk/Mangler.o trunk/Mangler.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/trunk/Mangler.o`; \
 	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/IOBuffer_nomain.o IOBuffer.cc;\
+	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/Mangler_nomain.o trunk/Mangler.cc;\
 	else  \
-	    ${CP} ${OBJECTDIR}/IOBuffer.o ${OBJECTDIR}/IOBuffer_nomain.o;\
+	    ${CP} ${OBJECTDIR}/trunk/Mangler.o ${OBJECTDIR}/trunk/Mangler_nomain.o;\
 	fi
 
-${OBJECTDIR}/IOFlush_nomain.o: ${OBJECTDIR}/IOFlush.o IOFlush.cc 
-	${MKDIR} -p ${OBJECTDIR}
-	@NMOUTPUT=`${NM} ${OBJECTDIR}/IOFlush.o`; \
+${OBJECTDIR}/trunk/Chunk_nomain.o: ${OBJECTDIR}/trunk/Chunk.o trunk/Chunk.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/trunk/Chunk.o`; \
 	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/IOFlush_nomain.o IOFlush.cc;\
+	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/Chunk_nomain.o trunk/Chunk.cc;\
 	else  \
-	    ${CP} ${OBJECTDIR}/IOFlush.o ${OBJECTDIR}/IOFlush_nomain.o;\
+	    ${CP} ${OBJECTDIR}/trunk/Chunk.o ${OBJECTDIR}/trunk/Chunk_nomain.o;\
 	fi
 
-${OBJECTDIR}/IOAppend_nomain.o: ${OBJECTDIR}/IOAppend.o IOAppend.cc 
-	${MKDIR} -p ${OBJECTDIR}
-	@NMOUTPUT=`${NM} ${OBJECTDIR}/IOAppend.o`; \
+${OBJECTDIR}/trunk/IOComplete_nomain.o: ${OBJECTDIR}/trunk/IOComplete.o trunk/IOComplete.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/trunk/IOComplete.o`; \
 	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/IOAppend_nomain.o IOAppend.cc;\
+	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/IOComplete_nomain.o trunk/IOComplete.cc;\
 	else  \
-	    ${CP} ${OBJECTDIR}/IOAppend.o ${OBJECTDIR}/IOAppend_nomain.o;\
+	    ${CP} ${OBJECTDIR}/trunk/IOComplete.o ${OBJECTDIR}/trunk/IOComplete_nomain.o;\
 	fi
 
-${OBJECTDIR}/Melter_nomain.o: ${OBJECTDIR}/Melter.o Melter.cc 
-	${MKDIR} -p ${OBJECTDIR}
-	@NMOUTPUT=`${NM} ${OBJECTDIR}/Melter.o`; \
+${OBJECTDIR}/trunk/IOManager_nomain.o: ${OBJECTDIR}/trunk/IOManager.o trunk/IOManager.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/trunk/IOManager.o`; \
 	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/Melter_nomain.o Melter.cc;\
+	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/IOManager_nomain.o trunk/IOManager.cc;\
 	else  \
-	    ${CP} ${OBJECTDIR}/Melter.o ${OBJECTDIR}/Melter_nomain.o;\
+	    ${CP} ${OBJECTDIR}/trunk/IOManager.o ${OBJECTDIR}/trunk/IOManager_nomain.o;\
 	fi
 
-${OBJECTDIR}/Chunk_nomain.o: ${OBJECTDIR}/Chunk.o Chunk.cc 
-	${MKDIR} -p ${OBJECTDIR}
-	@NMOUTPUT=`${NM} ${OBJECTDIR}/Chunk.o`; \
+${OBJECTDIR}/trunk/main_nomain.o: ${OBJECTDIR}/trunk/main.o trunk/main.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/trunk/main.o`; \
 	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/Chunk_nomain.o Chunk.cc;\
+	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/main_nomain.o trunk/main.cc;\
 	else  \
-	    ${CP} ${OBJECTDIR}/Chunk.o ${OBJECTDIR}/Chunk_nomain.o;\
+	    ${CP} ${OBJECTDIR}/trunk/main.o ${OBJECTDIR}/trunk/main_nomain.o;\
 	fi
 
-${OBJECTDIR}/IOManager_nomain.o: ${OBJECTDIR}/IOManager.o IOManager.cc 
-	${MKDIR} -p ${OBJECTDIR}
-	@NMOUTPUT=`${NM} ${OBJECTDIR}/IOManager.o`; \
+${OBJECTDIR}/trunk/IOBuffer_nomain.o: ${OBJECTDIR}/trunk/IOBuffer.o trunk/IOBuffer.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/trunk/IOBuffer.o`; \
 	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/IOManager_nomain.o IOManager.cc;\
+	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/IOBuffer_nomain.o trunk/IOBuffer.cc;\
 	else  \
-	    ${CP} ${OBJECTDIR}/IOManager.o ${OBJECTDIR}/IOManager_nomain.o;\
+	    ${CP} ${OBJECTDIR}/trunk/IOBuffer.o ${OBJECTDIR}/trunk/IOBuffer_nomain.o;\
 	fi
 
-${OBJECTDIR}/Mangler_nomain.o: ${OBJECTDIR}/Mangler.o Mangler.cc 
-	${MKDIR} -p ${OBJECTDIR}
-	@NMOUTPUT=`${NM} ${OBJECTDIR}/Mangler.o`; \
+${OBJECTDIR}/trunk/BufferObserver_nomain.o: ${OBJECTDIR}/trunk/BufferObserver.o trunk/BufferObserver.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/trunk/BufferObserver.o`; \
 	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/Mangler_nomain.o Mangler.cc;\
+	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/BufferObserver_nomain.o trunk/BufferObserver.cc;\
 	else  \
-	    ${CP} ${OBJECTDIR}/Mangler.o ${OBJECTDIR}/Mangler_nomain.o;\
+	    ${CP} ${OBJECTDIR}/trunk/BufferObserver.o ${OBJECTDIR}/trunk/BufferObserver_nomain.o;\
 	fi
 
-${OBJECTDIR}/IOComplete_nomain.o: ${OBJECTDIR}/IOComplete.o IOComplete.cc 
-	${MKDIR} -p ${OBJECTDIR}
-	@NMOUTPUT=`${NM} ${OBJECTDIR}/IOComplete.o`; \
+${OBJECTDIR}/trunk/IOAppend_nomain.o: ${OBJECTDIR}/trunk/IOAppend.o trunk/IOAppend.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/trunk/IOAppend.o`; \
 	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/IOComplete_nomain.o IOComplete.cc;\
+	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/IOAppend_nomain.o trunk/IOAppend.cc;\
 	else  \
-	    ${CP} ${OBJECTDIR}/IOComplete.o ${OBJECTDIR}/IOComplete_nomain.o;\
+	    ${CP} ${OBJECTDIR}/trunk/IOAppend.o ${OBJECTDIR}/trunk/IOAppend_nomain.o;\
 	fi
 
-${OBJECTDIR}/IOOperation_nomain.o: ${OBJECTDIR}/IOOperation.o IOOperation.cc 
-	${MKDIR} -p ${OBJECTDIR}
-	@NMOUTPUT=`${NM} ${OBJECTDIR}/IOOperation.o`; \
+${OBJECTDIR}/trunk/Melter_nomain.o: ${OBJECTDIR}/trunk/Melter.o trunk/Melter.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/trunk/Melter.o`; \
 	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/IOOperation_nomain.o IOOperation.cc;\
+	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/Melter_nomain.o trunk/Melter.cc;\
 	else  \
-	    ${CP} ${OBJECTDIR}/IOOperation.o ${OBJECTDIR}/IOOperation_nomain.o;\
+	    ${CP} ${OBJECTDIR}/trunk/Melter.o ${OBJECTDIR}/trunk/Melter_nomain.o;\
 	fi
 
-${OBJECTDIR}/BufferObserver_nomain.o: ${OBJECTDIR}/BufferObserver.o BufferObserver.cc 
-	${MKDIR} -p ${OBJECTDIR}
-	@NMOUTPUT=`${NM} ${OBJECTDIR}/BufferObserver.o`; \
+${OBJECTDIR}/trunk/IOFlush_nomain.o: ${OBJECTDIR}/trunk/IOFlush.o trunk/IOFlush.cc 
+	${MKDIR} -p ${OBJECTDIR}/trunk
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/trunk/IOFlush.o`; \
 	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/BufferObserver_nomain.o BufferObserver.cc;\
+	    $(COMPILE.cc) -g -I/usr/local/include -I. -fPIC  -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/trunk/IOFlush_nomain.o trunk/IOFlush.cc;\
 	else  \
-	    ${CP} ${OBJECTDIR}/BufferObserver.o ${OBJECTDIR}/BufferObserver_nomain.o;\
+	    ${CP} ${OBJECTDIR}/trunk/IOFlush.o ${OBJECTDIR}/trunk/IOFlush_nomain.o;\
 	fi
 
 # Run Test Targets
