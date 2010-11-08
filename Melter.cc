@@ -25,11 +25,6 @@ Melter::~Melter()
     delete _io;
 }
 
-Chunk Melter::output()
-{
-    return _io->read_from_output();
-}
-
 void Melter::update()
 {
     if (!_io)
@@ -65,8 +60,12 @@ std::size_t Melter::write( Chunk &chunk )
     return _io->append_to_input( chunk );
 }
 
+bool Melter::empty()
+{
+    return _io->empty();
+}
+
 Chunk Melter::read()
 {
-    Chunk chunk = _io->read_from_output();
-    return chunk;
+    return _io->read_from_output();
 }

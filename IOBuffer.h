@@ -89,6 +89,12 @@ public:
     char* ptr() { if (this->size() == 0) return NULL; return &_data[0]; }
     
     /**
+     * Tells if buffer is empty.
+     * @return true if empty, false otherwise.
+     */
+    bool empty() const { return _data.size() == 0 ? true : false; }
+    
+    /**
      * Tells the size of the buffer in bytes.
      * @return available number of bytes.
      */

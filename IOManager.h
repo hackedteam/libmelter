@@ -40,6 +40,12 @@ public:
     std::size_t append_to_input( Chunk& c );
     
     /**
+     * Checks if output buffer is empty (if true, use read_from_output to get data).
+     * @return true if there is data to read, false if empty.
+     */
+    bool empty() { return _output->empty(); }
+    
+    /**
      * Reads all the available data from the output buffer.
      * @return A Chunk of data.
      */

@@ -80,7 +80,7 @@ public:
      */
     virtual bool call( IOManager& io, std::string tag, Chunk& chunk ) = 0;
 };
-    
-}; // namespace
+
+} // namespace
 
 #endif	/* INTERFACES_H */

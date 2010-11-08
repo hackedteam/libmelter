@@ -67,4 +67,8 @@ namespace {
         io->process_pending();
         EXPECT_EQ( io->num_pending_operations(), 0 );
     }
+
+    TEST_F(IOManagerTest, empty) {
+        EXPECT_EQ( true, io->empty() );
+    }
 }

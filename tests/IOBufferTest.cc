@@ -172,4 +172,8 @@ namespace {
         buffer->append(*chunkA);
         ASSERT_EQ( 0, buffer->offset() );
     }
+
+    TEST_F(IOBufferTest, empty) {
+        EXPECT_EQ( true, buffer->empty());
+    }
 }

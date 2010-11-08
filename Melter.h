@@ -55,14 +55,14 @@ public:
     std::size_t write( Chunk &chunk );
 
     /**
+     * Check if buffer is empty.
+     * @return true if empty, false otherwise.
+     */
+    bool empty();
+    
+    /**
      * Gets any available output.
      * @return a chunk of data.
-     */
-    Chunk output();
-
-    /**
-     * 
-     * @return
      */
     Chunk read();
 
