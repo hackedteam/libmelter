@@ -18,6 +18,7 @@
       <itemPath>Melter.h</itemPath>
       <itemPath>Parser.h</itemPath>
       <itemPath>prototypes.h</itemPath>
+      <itemPath>../libpemelter/version.h.in</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -118,11 +119,13 @@
       <folder path="TestFiles/f1">
         <cTool>
           <incDir>
+            <pElem>.</pElem>
             <pElem>trunk</pElem>
           </incDir>
         </cTool>
         <ccTool>
           <incDir>
+            <pElem>.</pElem>
             <pElem>trunk</pElem>
           </incDir>
         </ccTool>
@@ -200,10 +203,12 @@
             <pElem>.</pElem>
             <pElem>.</pElem>
             <pElem>.</pElem>
+            <pElem>.</pElem>
           </incDir>
         </cTool>
         <ccTool>
           <incDir>
+            <pElem>.</pElem>
             <pElem>.</pElem>
             <pElem>.</pElem>
             <pElem>.</pElem>

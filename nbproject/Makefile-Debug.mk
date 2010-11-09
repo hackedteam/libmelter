@@ -144,49 +144,49 @@ ${TESTDIR}/TestFiles/f1: ${TESTDIR}/tests/BufferDescriptorTest.o ${TESTDIR}/test
 ${TESTDIR}/tests/BufferDescriptorTest.o: tests/BufferDescriptorTest.cc 
 	${MKDIR} -p ${TESTDIR}/tests
 	${RM} $@.d
-	$(COMPILE.cc) -g -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/BufferDescriptorTest.o tests/BufferDescriptorTest.cc
+	$(COMPILE.cc) -g -I. -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/BufferDescriptorTest.o tests/BufferDescriptorTest.cc
 
 
 ${TESTDIR}/tests/ChunkTest.o: tests/ChunkTest.cc 
 	${MKDIR} -p ${TESTDIR}/tests
 	${RM} $@.d
-	$(COMPILE.cc) -g -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/ChunkTest.o tests/ChunkTest.cc
+	$(COMPILE.cc) -g -I. -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/ChunkTest.o tests/ChunkTest.cc
 
 
 ${TESTDIR}/tests/IOBufferTest.o: tests/IOBufferTest.cc 
 	${MKDIR} -p ${TESTDIR}/tests
 	${RM} $@.d
-	$(COMPILE.cc) -g -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/IOBufferTest.o tests/IOBufferTest.cc
+	$(COMPILE.cc) -g -I. -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/IOBufferTest.o tests/IOBufferTest.cc
 
 
 ${TESTDIR}/tests/IOManagerTest.o: tests/IOManagerTest.cc 
 	${MKDIR} -p ${TESTDIR}/tests
 	${RM} $@.d
-	$(COMPILE.cc) -g -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/IOManagerTest.o tests/IOManagerTest.cc
+	$(COMPILE.cc) -g -I. -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/IOManagerTest.o tests/IOManagerTest.cc
 
 
 ${TESTDIR}/tests/ManglerTest.o: tests/ManglerTest.cc 
 	${MKDIR} -p ${TESTDIR}/tests
 	${RM} $@.d
-	$(COMPILE.cc) -g -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/ManglerTest.o tests/ManglerTest.cc
+	$(COMPILE.cc) -g -I. -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/ManglerTest.o tests/ManglerTest.cc
 
 
 ${TESTDIR}/tests/MelterTest.o: tests/MelterTest.cc 
 	${MKDIR} -p ${TESTDIR}/tests
 	${RM} $@.d
-	$(COMPILE.cc) -g -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/MelterTest.o tests/MelterTest.cc
+	$(COMPILE.cc) -g -I. -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/MelterTest.o tests/MelterTest.cc
 
 
 ${TESTDIR}/tests/ParserTest.o: tests/ParserTest.cc 
 	${MKDIR} -p ${TESTDIR}/tests
 	${RM} $@.d
-	$(COMPILE.cc) -g -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/ParserTest.o tests/ParserTest.cc
+	$(COMPILE.cc) -g -I. -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/ParserTest.o tests/ParserTest.cc
 
 
 ${TESTDIR}/tests/main.o: tests/main.cc 
 	${MKDIR} -p ${TESTDIR}/tests
 	${RM} $@.d
-	$(COMPILE.cc) -g -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/main.o tests/main.cc
+	$(COMPILE.cc) -g -I. -Itrunk -I/usr/local/include -I/usr/local/include -I. -MMD -MP -MF $@.d -o ${TESTDIR}/tests/main.o tests/main.cc
 
 
 ${OBJECTDIR}/main_nomain.o: ${OBJECTDIR}/main.o main.cc 
