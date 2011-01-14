@@ -64,7 +64,7 @@ namespace {
     
     TEST_F(ChunkTest, vector_reference_is_valid)
     {
-        ASSERT_EQ( (unsigned int) &_chunk->vector()[0], (unsigned int) _chunk->ptr() );
+        ASSERT_EQ( (intptr_t) &_chunk->vector()[0], (intptr_t) _chunk->ptr() );
     }
     
     TEST_F(ChunkTest, empty_pointer_is_null)
