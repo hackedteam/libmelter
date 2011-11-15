@@ -29,8 +29,8 @@ void Melter::setDefective(bool state)
 {
     if(state)
     {
-        io->remove_source_observer(*this);
-	_defective = true;
+        _io->remove_source_observer(*this);
+		_defective = true;
     }
 }
 
