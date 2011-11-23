@@ -65,6 +65,12 @@ public:
      * @param descriptor a descriptor identifying the action.
      */
     virtual void expire_action() = 0;
+
+	/**
+	 * Returns the number of registered actions
+	 * @return a std::size_t
+	 */
+	virtual std::size_t num_registered_actions() = 0;
 };
 
 class Mangler {

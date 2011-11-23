@@ -44,6 +44,9 @@ void IOBuffer::_push_front( Chunk &a )
 
 Chunk IOBuffer::pop( std::size_t size )
 {
+	if(!size)
+		return NULL;
+
     if ( available(_offset) < size )
         return Chunk( _offset );
     
