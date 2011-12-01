@@ -30,6 +30,10 @@ public:
      *
      */
     void update();
+	/**
+	 *
+	 */
+	bool isDefective();
 
     /**
      * Set defective state of Melter. Default argument is true.

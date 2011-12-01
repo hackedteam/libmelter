@@ -34,12 +34,17 @@ void Melter::setDefective(bool state)
     }
 }
 
+bool Melter::isDefective()
+{
+	return _defective;
+}
+
 void Melter::update()
 {
     if (!_io)
         assert(false);
     
-    while ( _parser.num_registered_actions() && _io->available( _parser.descriptor()  ) ) {
+    while ( _parser.num_registered_actions() && _io->available( _parser.descriptor() ) ) {
         std::string tag = _parser.tag();
         
         // get chunk and parse it, check for action expiration

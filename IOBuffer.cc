@@ -45,13 +45,13 @@ void IOBuffer::_push_front( Chunk &a )
 Chunk IOBuffer::pop( std::size_t size )
 {
 	if(!size)
-		return NULL;
+		return 0;
 
     if ( available(_offset) < size )
         return Chunk( _offset );
     
     Chunk c = Chunk( &_data[0], BufferDescriptor(_offset, size) );
-    _data.erase( _data.begin(), _data.begin() + size);
+    _data.erase( _data.begin(), _data.begin() + size );
     _offset += size;
     return c;
 }
