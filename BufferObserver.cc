@@ -1,9 +1,9 @@
 /*
- * BufferObserver.cpp
- *
- *  Created on: Sep 30, 2010
- *      Author: daniele
- */
+* BufferObserver.cpp
+*
+*  Created on: Sep 30, 2010
+*      Author: daniele
+*/
 
 #if 0
 

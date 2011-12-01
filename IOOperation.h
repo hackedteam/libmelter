@@ -1,9 +1,9 @@
 /*
- * Command.h
- *
- *  Created on: Oct 7, 2010
- *      Author: daniele
- */
+* Command.h
+*
+*  Created on: Oct 7, 2010
+*      Author: daniele
+*/
 
 #ifndef COMMAND_H_
 #define COMMAND_H_
@@ -20,14 +20,14 @@ typedef void (IOManager::* IOChunkAction)(Chunk& chunk);
 class IOOperation : public ::prototype::IOOperation
 {
 public:
-    IOOperation();
-    virtual ~IOOperation();
-    
-    /**
-     * Execute the action implemented by the IOOperation on a specific IOManager.
-     * @param io object on which the operation will be executed.
-     */
-    virtual void execute( IOManager* io );
+	IOOperation();
+	virtual ~IOOperation();
+
+	/**
+	* Execute the action implemented by the IOOperation on a specific IOManager.
+	* @param io object on which the operation will be executed.
+	*/
+	virtual void execute( IOManager* io );
 };
 
 #endif /* COMMAND_H_ */
