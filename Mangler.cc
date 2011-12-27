@@ -9,10 +9,6 @@
 #include <stdexcept>
 #include "Mangler.h"
 
-Mangler::Mangler()
-{
-}
-
 bool Mangler::call( IOManager& io, std::string tag, Chunk& chunk ) {
 	throw std::runtime_error("Not implemented!");
 }

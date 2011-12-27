@@ -71,6 +71,8 @@ namespace prototype {
 		* @return a std::size_t
 		*/
 		virtual std::size_t num_registered_actions() = 0;
+
+		virtual bool is_defective() = 0;
 	};
 
 	class Mangler {

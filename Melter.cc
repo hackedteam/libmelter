@@ -51,8 +51,17 @@ void Melter::update()
 		Chunk chunk = _io->read_for_parsing( _parser.descriptor() );
 		bool expired = _parser.call( chunk );
 
-		_mangler.call(*_io, _parser.tag(), chunk);
+		if(_parser.is_defective())
+		{
+			if(expired)
+				_parser.expire_action();
+			_io->append(chunk);
 
+			break;
+		}
+
+		_mangler.call(*_io, _parser.tag(), chunk);
+		
 		if (expired)
 			_parser.expire_action();
 	}
@@ -65,12 +74,26 @@ std::size_t Melter::write( char const * data, std::size_t size )
 	if (!data)
 		return 0;
 
+	
+	if(_parser.is_defective() && !_defective)
+		setDefective(true);
+
+
 	Chunk chunk = Chunk( data, BufferDescriptor(0, size) );
-	return this->write( chunk );
+	std::size_t ret_size = this->write( chunk );
+
+
+	return ret_size;
 }
 
 std::size_t Melter::write( Chunk &chunk )
 {
+	if(_defective)
+	{
+		_io->append(chunk);
+		return chunk.size();
+	}
+
 	return _io->append_to_input( chunk );
 }
 

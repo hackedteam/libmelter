@@ -40,6 +40,7 @@ class klass; \
 
 #define PARSER(klass) \
 	std::map< BufferDescriptor, std::pair<std::string, ParsingFunction> > actions; \
+	bool defective; \
 	\
 	virtual bool call( Chunk& chunk ) { \
 	bool result = false; \
@@ -55,6 +56,7 @@ class klass; \
 	virtual void expire_action() { \
 	EXPIRE_PARSE_ACTION( this ); \
 } \
-	virtual std::size_t num_registered_actions() { return actions.size(); }
+	virtual std::size_t num_registered_actions() { return actions.size(); } \
+	virtual bool is_defective() { return defective; } \
 
 #endif	/* PARSER_H */

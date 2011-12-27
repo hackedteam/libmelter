@@ -108,7 +108,7 @@ void IOBuffer::remove_observer( ::prototype::BufferObserver& observer )
 void IOBuffer::_notify()
 {
 	BOOST_FOREACH( ::prototype::BufferObserver* observer, _observers )
-		observer->update();
+			observer->update();
 }
 
 IOBuffer::IOBuffer()
